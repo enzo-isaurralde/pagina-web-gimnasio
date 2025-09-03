@@ -1,0 +1,123 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Space+Grotesk:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Fitness Hub</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --color-primario: #1193d4;
+        --color-secundario: #0a5e87;
+        --color-fondo: #1a202c;
+        --texto-primario: #e2e8f0;
+        --texto-secundario: #a0aec0;
+        --color-acento: #3182ce;
+      }
+      body {
+        font-family: "Space Grotesk", sans-serif;
+        background-color: var(--color-fondo);
+        color: var(--texto-primario);
+      }
+    </style>
+</head>
+<body class="bg-color-fondo text-texto-primario">
+<div class="contenedor-principal relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<header class="encabezado sticky top-0 z-50 flex items-center justify-center whitespace-nowrap border-b border-solid border-gray-700 bg-[var(--color-fondo)] bg-opacity-80 px-10 py-4 backdrop-blur-sm">
+<div class="logo-contenedor flex items-center gap-4">
+<span class="material-symbols-outlined text-color-primario text-3xl"> fitness_center </span>
+<h2 class="texto-logo text-xl font-bold">Fitness Hub</h2>
+</div>
+</header>
+<main class="contenido-principal container mx-auto max-w-7xl px-4 py-8">
+<section class="hero-seccion relative mb-16 h-96 w-full rounded-2xl bg-cover bg-center text-white" style='background-image: linear-gradient(0deg, rgba(26, 32, 44, 0.7) 0%, rgba(26, 32, 44, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_5pc8TgYDbLWpiHEvOd11UVugjYSYA3cwp6Xc4662FNup_4Psulr1F1tMzeQhqphqh1gWR_jLOIjixczErH6DYW5qkFhRYU_EIfGcUfJoxqMY3mnsXGVet845_ScuDlymsqRPSvmk04nE6LiGiySXGFwaggGazlq9_HHJaW2Y5qJYleMLk952sXBCk-5KmdOZijClwh1UUgHfJP130MpWO3B26VpmAFkvUfbsSoAHMntF6G6TvGMNLejMPUt43DXQAKnFpGm6ua0");'>
+<div class="hero-texto absolute bottom-0 p-8">
+<h1 class="titulo-principal text-5xl font-bold leading-tight text-white">Transforma tu cuerpo, transforma tu vida</h1>
+</div>
+</section>
+<section class="seccion-galeria mb-16" id="galeria">
+<h2 class="titulo-seccion mb-8 text-center text-4xl font-semibold text-color-primario">Nuestra Galería</h2>
+<div class="galeria-grid grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+<div class="item-galeria group relative overflow-hidden rounded-lg shadow-md">
+<img alt="Imagen de gimnasio 1" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_e6x9htNI7RB5If5aCN2tIhIM0mj6d4bgT06QR-f99HjSbwtv2ojuKuK3XVsHVnW9zAHlE_hNWlryaIKOd2NMw-yI9wadv1wLYvoNpVjfjKX30uw0M6uz-uEmNVGs70L36zHQWubXK6A_FatjoQO3Sa3tMaG1Hdlx4JIhVwiGDxM_VadLTn6vpi0IQgGlvStQCR4kRWtRWIeGZl9IgJxPhRKKiGfJTGBhHWNflBjOMRRTXG4ccJpPp-vbHRjg7cXE-cyUcgedUGs"/>
+</div>
+<div class="item-galeria group relative overflow-hidden rounded-lg shadow-md">
+<img alt="Imagen de gimnasio 2" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAMY3HMyovqhCJLdIZRJ_-UX23l7-ayU9kzbU7KDnEBNj6R76mWWP1P8eiaIXJC1Hsfh_IodZyp1L2evT2KX8jC118Ow2ecv2L-y095fON8jyhX3h48FRbjO0ghzBE_ZkDv1_wGF6MVZXEd6v4ttzw-YrL3UWhripOMnohz0EF6OITUMgFkoHNuHTYRQ4EwtyZuMhLv5lLbszUBKHX_dlUHYfDn7cY4Eisp-jzwLMs-hVc4pTm3kLJHBWG2_gbUZYFa28lk9ZzE1M"/>
+</div>
+<div class="item-galeria group relative overflow-hidden rounded-lg shadow-md">
+<img alt="Imagen de gimnasio 3" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzmLJ6x79aJX4TKeohE_N_2zT2JFnsA-ED6uVj4mfP2w-oFlWTSHHmdzRViuwc34KoSd-HY4fbxLNZVb893QMtQvHQyz7ERBZSHaPvk0kcYF25HyN-SHirZbrRtuZ-WqEgCw6Z3hWSMyOStrK6TFGfjv0zXEXvhbKPWvdzDtBDwMLrzFkIRnFHq9EvMwYED52mlQufNYeL2AhcJhSaAP1QN9q7bQJE1Hi6xi6UiWu-U0di0ogF56HVegiL1KQK0xTn1K8TlZu9UNc"/>
+</div>
+<div class="item-galeria group relative hidden overflow-hidden rounded-lg shadow-md md:block">
+<img alt="Imagen de gimnasio 4" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk2aLK23NqoAExRq02MAtKJcz22WRqkx2IUzgQa9OpoHtFEAEl0l2iTUoMAEW4Krf3HmPeR39e5MkodiYZunNR541gwymu7yx_HyE-wMvdlDyj9fvjoRcLnfbfXujlMHKme5_Zf1z5O4wDjfiMjrR-3xd8ahB0BvNjLskZtr7YjDJeVIgR4nw3sKowwzucAVngS5bB_BhUc4fQdYqqmj_3X0Yl4jN7xFId5N0mu7Mv1DI138WbPdJN14frs8s7r_mWmTtND4MHYgI"/>
+</div>
+<div class="item-galeria group relative hidden overflow-hidden rounded-lg shadow-md lg:block">
+<img alt="Imagen de gimnasio 5" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCePQZT5og_5W9AK_7l80m64HWaY1KXjZMXrCSWrOcgsJ9LkEASopf4vCFbMB7e5beU3VRzHEAH18TCoEONiYK-OYCPN8F5LS0JxuDOFW_jkOLZ9kjZwZqYVU4W38MkTpsnUIqBjE1ZV-oQuN0GxGCiValZW_vl6PHs1FgdgW7xvElK4F6h7M9PXuZopxBoImQA3kzdm81m3MbGXhMHg1B5aJ1JbCXUdjRCg3pm_6bCM0KWj8kE9x1NpkR-c4FGlKZ4SemqUDo4Aq0"/>
+</div>
+<div class="item-galeria group relative hidden overflow-hidden rounded-lg shadow-md lg:block">
+<img alt="Imagen de gimnasio 6" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfy70maRVY7fpYbV9tx1C7d4YSK2r9Tcw5fVHuWHToRBfaYGM1O84lKBwsPABU5Sp9pkG9v_cvivFJNBNzmRmywqbda0HKsZJtIzovHPentWi6NhJCG7AxSHbGdDyZCego90yGAnigvJXo-OBBzTH3tCcXWPPGcpRAhkTkfCgPBdiHlEzok_vE14XXUF2hax-WgUJ8XRDFWf7ze_GZHCblBd1mZFGls4lyLNc41WPy-Yfz-OLCnb-sjtumEle5LZebdoi7SkiSey0"/>
+</div>
+</div>
+</section>
+<section class="seccion-ubicacion mb-16" id="ubicacion">
+<h2 class="titulo-seccion mb-8 text-center text-4xl font-semibold text-color-primario">Encuéntranos</h2>
+<div class="mapa-contenedor aspect-video w-full overflow-hidden rounded-2xl shadow-lg">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.25032986429!2d-122.419415484681!3d37.77492927975825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c1c1f7c7b%3A0x4a501367f076adff!2sFitness%20Hub!5e0!3m2!1sen!2ses!4v1678886400000!5m2!1sen!2ses" style="border: 0" width="100%"></iframe>
+</div>
+</section>
+</main>
+<footer class="pie-pagina mt-12 bg-gray-900 py-12 text-texto-secundario">
+<div class="container mx-auto px-4">
+<section class="seccion-planes mb-12" id="planes">
+<h2 class="titulo-seccion mb-8 text-center text-4xl font-semibold text-color-primario">Planes de Membresía</h2>
+<div class="planes-grid grid grid-cols-1 gap-8 md:grid-cols-3">
+<div class="tarjeta-plan flex flex-col rounded-lg border border-gray-700 bg-gray-800 p-6 text-center">
+<h3 class="titulo-plan mb-4 text-2xl font-bold text-color-primario">Básico</h3>
+<p class="precio-plan mb-4 text-4xl font-bold text-color-primario">$29<span class="periodo-plan text-lg font-normal text-texto-secundario">/mes</span></p>
+<ul class="lista-caracteristicas mb-6 flex-grow space-y-2 text-left">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500">check_circle</span>Acceso a todas las áreas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500">check_circle</span>Clases grupales</li>
+<li class="flex items-center gap-2 text-gray-500"><span class="material-symbols-outlined">cancel</span>Entrenador personal</li>
+</ul>
+<button class="boton-plan bg-color-primario hover:bg-color-secundario mt-auto w-full rounded-md py-2 font-bold text-white transition-colors">Elegir Plan</button>
+</div>
+<div class="tarjeta-plan-destacado flex flex-col rounded-lg border-2 border-color-primario bg-gray-800 p-6 text-center shadow-lg">
+<h3 class="titulo-plan mb-4 text-2xl font-bold text-color-primario">Plus</h3>
+<p class="precio-plan mb-4 text-4xl font-bold text-color-primario">$49<span class="periodo-plan text-lg font-normal text-texto-secundario">/mes</span></p>
+<ul class="lista-caracteristicas mb-6 flex-grow space-y-2 text-left">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500">check_circle</span>Acceso a todas las áreas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500">check_circle</span>Clases grupales</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500">check_circle</span>Entrenador personal (2 sesiones/mes)</li>
+</ul>
+<button class="boton-plan bg-color-primario hover:bg-color-secundario mt-auto w-full rounded-md py-2 font-bold text-white transition-colors">Elegir Plan</button>
+</div>
+<div class="tarjeta-plan flex flex-col rounded-lg border border-gray-700 bg-gray-800 p-6 text-center">
+<h3 class="titulo-plan mb-4 text-2xl font-bold text-color-primario">Premium</h3>
+<p class="precio-plan mb-4 text-4xl font-bold text-color-primario">$79<span class="periodo-plan text-lg font-normal text-texto-secundario">/mes</span></p>
+<ul class="lista-caracteristicas mb-6 flex-grow space-y-2 text-left">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500">check_circle</span>Acceso a todas las áreas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500">check_circle</span>Clases grupales ilimitadas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-green-500">check_circle</span>Entrenador personal ilimitado</li>
+</ul>
+<button class="boton-plan bg-color-primario hover:bg-color-secundario mt-auto w-full rounded-md py-2 font-bold text-white transition-colors">Elegir Plan</button>
+</div>
+</div>
+</section>
+<div class="info-pie-pagina border-t border-gray-800 pt-6">
+<div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+<div class="contacto flex items-center gap-2">
+<span class="material-symbols-outlined">call</span>
+<p>111-337-1313</p>
+</div>
+<div class="redes-sociales flex gap-4">
+<a class="enlace-social text-texto-secundario hover:text-color-primario" href="#"><svg class="size-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.74 0 8.333.012 7.053.072 2.695.272.273 2.69.073 7.052.012 8.333 0 8.74 0 12s.012 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.988 8.74 24 12 24s3.667-.012 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.06-1.28.072-1.687.072-4.947s-.012-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.012 15.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"></path></svg></a>
+<a class="enlace-social text-texto-secundario hover:text-color-primario" href="#"><svg class="size-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+<a class="enlace-social text-texto-secundario hover:text-color-primario" href="#"><svg class="size-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.223.085 4.93 4.93 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg></a>
+</div>
+<p class="copyright text-center">© 2023 Fitness Hub. Todos los derechos reservados.</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
